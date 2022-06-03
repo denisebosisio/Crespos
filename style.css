@@ -9,64 +9,6 @@ header{
     flex-direction: column;
     align-items: center;
 }
-
-@media (max-width: 650px){
-    .navegacao1{
-        width: 100%;
-        height: 10vw;
-        overflow: hidden;
-    }
-    .navegacao1 p{
-        background: url(Menu.png);
-        background-repeat: no-repeat;
-        width: 6%;
-        height: 8vw;
-        cursor: pointer;
-    }
-    .suspenso:hover, .suspenso:focus{
-        background-color: #9767A9;
-    }
-    .navegacao1{
-        position: relative;
-        display: inline-block;
-    }
-    .lista{
-        display: none;
-        position: absolute;
-        background-color: #9767A9;
-        z-index: 3;
-    }
-    .lista li{
-        color: #FFFFFF;
-        /*padding: 12px 16px;*/
-        text-decoration: none;
-        display: block;
-    }
-    .lista li:hover {
-        background-color: #AC95BB;
-    }
-    .lista:{
-        display: block
-    }
-
-    .logo img{
-        float: center;
-        padding: 100%;
-    }
-    .logo img.hover{
-        font-weight: bold;
-    }
-    .busca{
-        display: none;
-    }
-    .busca figure{
-        display: none;
-    }
-    .busca fieldset{
-        display: none;
-    }
-}
-
 .navegacao1 {
     width: 100%;
     height: 6vw;
@@ -75,7 +17,6 @@ header{
     background-color: #FFFFFF;
     z-index: 10;
 }
-
 .logo{
     width: 7vw;
     height: 3.5vw;
@@ -84,7 +25,6 @@ header{
     margin-top: 1.4vw;
     margin-left: 5vw;
 }
-
 .lista{
     color: #9767A9;
     top: 5vw;
@@ -95,7 +35,6 @@ header{
     align-items: stretch;
     margin-left: 0.5vw;
 }
-
 .lista ul{
     letter-spacing: 0.5px;
     font-size: 1.1vw;
@@ -111,12 +50,10 @@ header{
     justify-content: center;
     align-items: stretch;
 }
-
 .lista li:hover{
     color: #613172;
     cursor: pointer;
   }
-
 .busca{
     color:#9767A9;
     display: flex;
@@ -138,12 +75,82 @@ header{
 }
 .busca figure{
     margin-top: -0.5vw;
-    margin-left: 2vw;
-    width: 10vw;
+    margin-left: 1.6vw;
+    width: 13vw;
 }
-
+@media (min-width: 651px){
+    .suspenso{
+        display: none;
+    }
+}
+@media (max-width: 650px){
+    .navegacao1{
+        width: 100%;
+        height: 10vw;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+    }
+    .suspenso{
+        background: url(Menu.png);
+        padding: 6vw;
+        border: none;
+    }
+    .suspenso:hover, .suspenso:focus{
+        background-color: #9767A9;
+    }
+    .navegacao1{
+        position: relative;
+        display: inline-block;
+    }
+    .lista{
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        z-index: 3;
+    }
+    .lista li{
+        color: #FFFFFF;
+        text-decoration: none;
+        display: block;
+    }
+    .lista li:hover {
+        background-color: #AC95BB;
+    }
+    .lista:{
+        display: block
+    }
+    .logo img{
+        display: flex;
+        align-items: center;
+        padding: 100%;
+        margin-top: -18vw;
+    }
+    .logo img.hover{
+        font-weight: bold;
+    }
+    .busca{
+        display: none;
+    }
+    .busca figure{
+        display: none;
+    }
+    .busca fieldset{
+        display: none;
+    }
+}
 .navegacao2{
     margin-left: 0vw;
+}
+.navegacao2 img{
+    width: 100%;
+    height: 41vw;
+    z-index: -1;
+}
+@media (min-width: 551px){
+    .imagem_cabelo2 img{
+        display: none;
+    }
 }
 @media (max-width: 550px){
     .imagem_cabelo img{
@@ -154,9 +161,10 @@ header{
         margin-left: 0vw;
         margin-top: 0vw;
         width: 100%;
-        height: 80vw;
+        height: 70vw;
     }
-    .imagem_cabelo2{
+    .imagem_cabelo2 figure{
+        position: absolute;
         display: flex;
         z-index: -1;
         width: 100%;
@@ -164,16 +172,6 @@ header{
         object-fit: cover;
         overflow: hidden;
     }
-}
-@media (min-width: 551px){
-    .imagem_cabelo2 img{
-        display: none;
-    }
-}
-.navegacao2 img{
-    width: 100%;
-    height: 41vw;
-    z-index: -1;
 }
 .escrito1{
     z-index: 1;
@@ -185,31 +183,6 @@ header{
     margin-top: -22.5vw;
     margin-left: 14.5vw;
 }
-@media (max-width: 550px){
-    .navegacao2{
-        position: relative;
-    }
-    .escrito1{
-        background-color: aqua;
-        width: 23vw;
-        z-index: 1;
-        font-size: 35px;
-        margin-top: -72vw;
-        position: absolute;
-        margin-left: 4vw;
-    }
-    .escrito2{
-        background-color: red;
-        width: 20vw;
-        position: absolute;
-        z-index: 1;
-        font-size: 15px;
-        text-align: left;
-        letter-spacing: -1.2px;
-        margin-top: -60vw;
-        margin-left: 4vw;
-    }
-}
 .escrito2{
     z-index: 1;
     color: #FFFFFF;
@@ -219,6 +192,28 @@ header{
     letter-spacing: -1.2px;
     margin-left: 63vw;
     margin-top: -9.1vw;
+}
+@media (max-width: 550px){
+    .navegacao2{
+        position: relative;
+    }
+    .escrito1{
+        width: 30vw;
+        z-index: 1;
+        font-size: 8vw;
+        margin-top: 18vw;
+        position: absolute;
+        margin-left: 8vw;
+    }
+    .escrito2{
+        background-color: aqua;
+        width: 40vw;
+        z-index: 1;
+        font-size: 4vw;
+        margin-top: 40vw;
+        position: absolute;
+        margin-left: 8vw;
+    }
 }
 
 .secao{
@@ -230,32 +225,10 @@ header{
     display: flex;
     position: relative;
 }
-@media (max-width: 550px){
-    .secao{
-        width: 100%;
-        height: 100vw;
-        position: relative;
-    }
-    .setepassos{
-        font-size: 20px;
-        text-align: left;
-        position: absolute;
-        width: 60vw;
-        margin-top: 2vw;
-        margin-left: 4vw;
-    }
-    .incentivo{
-        font-size: 12px;
-        text-align: justify;
-        width: 60vw;
-        margin-top: 8vw;
-        margin-left: 4vw;
-    }
-}
 .setepassos{
     color: #FFFFFF;
-    width: 40vw;
-    font-size: 42px;
+    width: 43vw;
+    font-size: 3vw;
     font-weight: bold;
     text-align: left;
     margin-left: 6vw;
@@ -265,14 +238,36 @@ header{
 }
 .incentivo{
     color: #FFFFFF;
-    width: 30vw;
+    width: 45vw;
     font-weight: lighter;
     text-align: left;
-    font-size: 18px;
-    margin-top: 16vw;
-    margin-left: 55vw;
+    font-size: 1.5vw;
+    margin-top: 17vw;
+    margin-left: 50vw;
     justify-content: space-between;
     position: absolute;
+}
+@media (max-width: 550px){
+    .secao{
+        width: 100%;
+        height: 78vw;
+        position: relative;
+    }
+    .setepassos{
+        font-size: 6vw;
+        text-align: center;
+        position: absolute;
+        width: 80vw;
+        margin-top: 2vw;
+        margin-left: 11vw;
+    }
+    .incentivo{
+        font-size: 4vw;
+        text-align: center;
+        width: 80vw;
+        margin-top: 20vw;
+        margin-left: 11vw;
+    }
 }
 
 .secao1{
@@ -300,17 +295,17 @@ header{
     background-color: #9767A9;
     color: #FFFFFF;
     position: absolute;
-    width: 29vw;
-    height: 26vw;
+    width: 35vw;
+    height: 29vw;
     margin-top: 18.2vw;
-    margin-left: 12.5vw;
+    margin-left: 9.5vw;
 }
 
 .um{
     position: absolute;
     text-align: left;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 2vw;
     top: 1vw;
     margin-left: 2vw;
     margin-right: 2vw;
@@ -319,9 +314,9 @@ header{
     position: absolute;
     text-align: left;
     font-weight: lighter;
-    font-size: 17px;
-    line-height: 22px;
-    margin-top: 7vw;
+    font-size: 1.5vw;
+    line-height: 2vw;
+    margin-top: 6vw;
     margin-left: 2vw;
     margin-right: 1.8vw;
 }
@@ -336,19 +331,20 @@ header{
         margin-top: 27vw;
         margin-left: 0vw;
         width: 100%;
-        height: 68vw;
+        height: 80vw;
     }
     .um{
-        font-size: 22px;
+        font-size: 6vw;
         margin-top: 1.5vw;
         margin-left: 9vw;
-        width: 40vw;
+        width: 75vw;
     }
     .texto1{
-        font-size: 15px;
-        margin-top: 14vw;
+        font-size: 3vw;
+        margin-top: 17vw;
         margin-left: 9vw;
-        width: 48vw;
+        width: 80vw;
+        height: 70vw;
     }
 }
 .imagem2 img{
@@ -364,27 +360,26 @@ header{
     background-color: #9767A9;
     color: #FFFFFF;
     position: absolute;
-    width: 29vw;
-    height: 23.5vw;
-    margin-top: 39.2vw;
-    margin-left: 57vw;
+    width: 35vw;
+    height: 29vw;
+    margin-top: 40vw;
+    margin-left: 53vw;
 }
 .dois{
     position: absolute;
     text-align: left;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 2vw;
     top: 1vw;
     margin-left: 2vw;
-    margin-right: 2vw;
 }
 .texto2{
     position: absolute;
     text-align: left;
     font-weight: lighter;
-    font-size: 17px;
-    line-height: 22px;
-    margin-top: 4.5vw;
+    font-size: 1.5vw;
+    line-height: 2vw;
+    margin-top: 4vw;
     margin-left: 2vw;
     margin-right: 1.8vw;
 }
@@ -404,23 +399,24 @@ header{
         height: 58vw;
     }
     .dois{
-        font-size: 22px;
+        font-size: 6vw;
         margin-top: 1.5vw;
         margin-left: 9vw;
-        width: 40vw;
+        width: 75vw;
     }
     .texto2{
-        font-size: 15px;
-        margin-top: 10vw;
+        font-size: 3vw;
+        margin-top: 11vw;
         margin-left: 9vw;
-        width: 55vw;
+        width: 80vw;
+        height: 70vw;
     }
 }
 
 .imagem3 img{
     z-index: 2;
     width: 40.2vw;
-    height: 470px;
+    height: 380px;
     margin-top: 48.5vw;
     position: absolute;
     margin-left: 7.2vw;
@@ -430,16 +426,16 @@ header{
     background-color: #9767A9;
     color: #FFFFFF;
     position: absolute;
-    width: 29vw;
-    height: 18vw;
-    margin-top: 73vw;
-    margin-left: 13vw;
+    width: 35vw;
+    height: 19vw;
+    margin-top: 75vw;
+    margin-left: 10vw;
 }
 .tres{
     position: absolute;
     text-align: left;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 2vw;
     top: 1vw;
     margin-left: 2vw;
     margin-right: 2vw;
@@ -448,9 +444,9 @@ header{
     position: absolute;
     text-align: left;
     font-weight: lighter;
-    font-size: 17px;
-    line-height: 22px;
-    margin-top: 7vw;
+    font-size: 1.5vw;
+    line-height: 2vw;
+    margin-top: 4.5vw;
     margin-left: 2vw;
     margin-right: 1.8vw;
 }
@@ -467,19 +463,20 @@ header{
         margin-top: 242vw;
         margin-left: 0vw;
         width: 100%;
-        height: 42vw;
+        height: 43vw;
     }
     .tres{
-        font-size: 22px;
+        font-size: 6vw;
         margin-top: 1.5vw;
         margin-left: 9vw;
-        width: 40vw;
+        width: 80vw;
     }
     .texto3{
-        font-size: 15px;
-        margin-top: 13.5vw;
+        font-size: 3vw;
+        margin-top: 17vw;
         margin-left: 9vw;
-        width: 55vw;
+        width: 80vw;
+        height: 70vw;
     }
 }
 
@@ -496,16 +493,16 @@ header{
     background-color: #9767A9;
     color: #FFFFFF;
     position: absolute;
-    width: 29vw;
-    height: 19vw;
-    margin-top: 93.5vw;
-    margin-left: 57vw;
+    width: 35vw;
+    height: 21.2vw;
+    margin-top: 93vw;
+    margin-left: 53.5vw;
 }
 .quatro{
     position: absolute;
     text-align: left;
     font-weight: bold;
-    font-size: 29px;
+    font-size: 2vw;
     top: 1vw;
     margin-left: 2vw;
     margin-right: 1.5vw;
@@ -514,8 +511,8 @@ header{
     position: absolute;
     text-align: left;
     font-weight: lighter;
-    font-size: 17px;
-    line-height: 22px;
+    font-size: 1.5vw;
+    line-height: 2vw;
     margin-top: 4.5vw;
     margin-left: 2vw;
     margin-right: 1.8vw;
@@ -536,16 +533,17 @@ header{
         height: 45vw;
     }
     .quatro{
-        font-size: 22px;
+        font-size: 6vw;
         margin-top: 1.5vw;
         margin-left: 9vw;
-        width: 60vw;
+        width: 80vw;
     }
     .texto4{
-        font-size: 15px;
+        font-size: 3vw;
         margin-top: 10vw;
         margin-left: 9vw;
-        width: 55vw;
+        width: 80vw;
+        height: 70vw;
     }
 }
 
@@ -562,16 +560,16 @@ header{
     background-color: #9767A9;
     color: #FFFFFF;
     position: absolute;
-    width: 29vw;
-    height: 22vw;
+    width: 35vw;
+    height: 24.5vw;
     margin-top: 123vw;
-    margin-left: 13vw;
+    margin-left: 10vw;
 }
 .cinco{
     position: absolute;
     text-align: left;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 2vw;
     top: 1vw;
     margin-left: 2vw;
     margin-right: 2vw;
@@ -580,9 +578,9 @@ header{
     position: absolute;
     text-align: left;
     font-weight: lighter;
-    font-size: 17px;
-    line-height: 22px;
-    margin-top: 4.5vw;
+    font-size: 1.5vw;
+    line-height: 2vw;
+    margin-top: 4vw;
     margin-left: 2vw;
     margin-right: 1.8vw;
 }
@@ -602,16 +600,17 @@ header{
         height: 55vw;
     }
     .cinco{
-        font-size: 22px;
+        font-size: 6vw;
         margin-top: 1.5vw;
         margin-left: 9vw;
-        width: 50vw;
+        width: 80vw;
     }
     .texto5{
-        font-size: 15px;
-        margin-top: 10vw;
+        font-size: 3vw;
+        margin-top: 11vw;
         margin-left: 9vw;
-        width: 55vw;
+        width: 80vw;
+        height: 70vw;
     }
 }
 .imagem6 img{
@@ -627,16 +626,16 @@ header{
     background-color: #9767A9;
     color: #FFFFFF;
     position: absolute;
-    width: 29vw;
-    height: 19vw;
+    width: 35vw;
+    height: 21vw;
     margin-top: 142.2vw;
-    margin-left: 57vw;
+    margin-left: 53.2vw;
 }
 .seis{
     position: absolute;
     text-align: left;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 2vw;
     top: 1vw;
     margin-left: 2vw;
     margin-right: 2vw;
@@ -645,8 +644,8 @@ header{
     position: absolute;
     text-align: left;
     font-weight: lighter;
-    font-size: 17px;
-    line-height: 22px;
+    font-size: 1.5vw;
+    line-height: 2vw;
     margin-top: 4.5vw;
     margin-left: 2vw;
     margin-right: 1.8vw;
@@ -667,16 +666,17 @@ header{
         height: 46vw;
     }
     .seis{
-        font-size: 22px;
+        font-size: 6vw;
         margin-top: 1.5vw;
         margin-left: 9vw;
-        width: 50vw;
+        width: 80vw;
     }
     .texto6{
-        font-size: 15px;
-        margin-top: 10vw;
+        font-size: 3vw;
+        margin-top: 11vw;
         margin-left: 9vw;
-        width: 55vw;
+        width: 80vw;
+        height: 70vw;
     }
 }
 .imagem7 img{
@@ -692,16 +692,16 @@ header{
     background-color: #9767A9;
     color: #FFFFFF;
     position: absolute;
-    width: 29vw;
-    height: 17vw;
+    width: 35vw;
+    height: 19.5vw;
     margin-top: 173vw;
-    margin-left: 13vw;
+    margin-left: 10vw;
 }
 .sete{
     position: absolute;
     text-align: left;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 2vw;
     top: 1vw;
     margin-left: 2vw;
     margin-right: 2vw;
@@ -710,9 +710,9 @@ header{
     position: absolute;
     text-align: left;
     font-weight: lighter;
-    font-size: 17px;
-    line-height: 22px;
-    margin-top: 4.5vw;
+    font-size: 1.5vw;
+    line-height: 2vw;
+    margin-top: 4vw;
     margin-left: 2vw;
     margin-right: 1.8vw;
 }
@@ -732,16 +732,17 @@ header{
         height: 42vw;
     }
     .sete{
-        font-size: 22px;
+        font-size: 6vw;
         margin-top: 1.5vw;
         margin-left: 9vw;
-        width: 50vw;
+        width: 80vw;
     }
     .texto7{
-        font-size: 15px;
-        margin-top: 10vw;
+        font-size: 3vw;
+        margin-top: 11vw;
         margin-left: 9vw;
-        width: 55vw;
+        width: 80vw;
+        height: 70vw;
     }
 }
 .imagem8 img{
@@ -750,7 +751,7 @@ header{
     height: 20vw;
     margin-top: 162vw;
     position: absolute;
-    margin-left: 750px;
+    margin-left: 562px;
 }
 @media (max-width: 550px){
     .imagem8 img{
@@ -945,7 +946,7 @@ header{
 footer{
     background-color: #9767A9;
     width: 100%;
-    height: 5vw;
+    height: 7vw;
     position: relative;
     display: block;
     z-index: 2;
@@ -1026,9 +1027,30 @@ footer{
     .rodapemobile nav{
         display: none;
     }
+    .redesocial{
+        display: none;
+    }
+    .iconesnav{
+        display: none;
+    }
+    .nota{
+        display: none;
+    }
 }
 @media (max-width: 551px){
-    .iconesrodape{
+    footer{
+        background-color: #FFFFFF;
+    }
+    .rodape{
+        display: none;
+    }
+    .anterior{
+        display: none;
+    }
+    .topo{
+        display: none;
+    }
+    .proxima{
         display: none;
     }
     .rodapemobile{
@@ -1036,16 +1058,24 @@ footer{
     }
     .redesocial figure{
         position: absolute;
-        width: ;
-        height: ;
-        margin-top: ;
-        margin-top: ;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-evenly;
+        width: 5vw;
+        height: 5vw;
+        margin-top: 1vw;
+        margin-left: 12vw;
     }
     .iconesnav figure{
         position: absolute;
-        width: ;
-        height: ;
-        margin-top: ;
-        margin-right: ;
+        width: 10vw;
+        height: 10vw;
+        margin-top: 1vw;
+        margin-left: 60vw;
+    }
+    .nota{
+        position: absolute;
+        margin-top: 8vw;
+        margin-left: 7vw;
     }
 }
