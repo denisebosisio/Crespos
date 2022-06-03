@@ -10,6 +10,63 @@ header{
     align-items: center;
 }
 
+@media (max-width: 650px){
+    .navegacao1{
+        width: 100%;
+        height: 8vw;
+        overflow: hidden;
+    }
+    .navegacao1 p{
+        background: url(Menu.png);
+        background-repeat: no-repeat;
+        width: 6%;
+        height: 8vw;
+        cursor: pointer;
+    }
+    .suspenso:hover, .suspenso:focus{
+        background-color: #9767A9;
+    }
+    .navegacao1{
+        position: relative;
+        display: inline-block;
+    }
+    .lista{
+        display: none;
+        position: absolute;
+        background-color: #9767A9;
+        z-index: 3;
+    }
+    .lista li{
+        color: #FFFFFF;
+        /*padding: 12px 16px;*/
+        text-decoration: none;
+        display: block;
+    }
+    .lista li:hover {
+        background-color: #AC95BB;
+    }
+    .lista:{
+        display: block
+    }
+
+    .logo img{
+        float: center;
+        padding: 100%;
+    }
+    .logo img.hover{
+        font-weight: bold;
+    }
+    .busca{
+        display: none;
+    }
+    .busca figure{
+        display: none;
+    }
+    .busca fieldset{
+        display: none;
+    }
+}
+
 .navegacao1 {
     width: 100%;
     height: 6vw;
@@ -36,7 +93,7 @@ header{
     text-align: center;
     display: flex;
     align-items: stretch;
-    margin-left: 1.8vw;
+    margin-left: 0.5vw;
 }
 
 .lista ul{
@@ -45,12 +102,14 @@ header{
     list-style: none;
     display: flex;
     text-align: center;
+    align-items: stretch;
     margin-top: 2vw;
 }
 .lista li{
     margin-left: 3.8vw;
     display: flex;
     justify-content: center;
+    align-items: stretch;
 }
 
 .lista li:hover{
@@ -79,11 +138,37 @@ header{
 }
 .busca figure{
     margin-top: -0.5vw;
-    margin-left: 2vw; 
+    margin-left: 2vw;
+    width: 10vw;
 }
 
 .navegacao2{
     margin-left: 0vw;
+}
+@media (max-width: 550px){
+    .imagem_cabelo img{
+        display: none;
+    }
+    .navegacao2{
+        position: relative;
+        margin-left: 0vw;
+        margin-top: 0vw;
+        width: 100%;
+        height: 80vw;
+    }
+    .imagem_cabelo2{
+        display: flex;
+        z-index: -1;
+        width: 100%;
+        height: 80vw;
+        object-fit: cover;
+        overflow: hidden;
+    }
+}
+@media (min-width: 551px){
+    .imagem_cabelo2 img{
+        display: none;
+    }
 }
 .navegacao2 img{
     width: 100%;
@@ -93,7 +178,6 @@ header{
 .escrito1{
     z-index: 1;
     color: #FFFFFF;
-    /*font-family: 'Playfair Display', serifa;*/
     font-size: 70px;
     font-weight: bold;
     text-align: left;
@@ -101,10 +185,34 @@ header{
     margin-top: -22.5vw;
     margin-left: 14.5vw;
 }
+@media (max-width: 550px){
+    .navegacao2{
+        position: relative;
+    }
+    .escrito1{
+        background-color: aqua;
+        width: 23vw;
+        z-index: 1;
+        font-size: 35px;
+        margin-top: -72vw;
+        position: absolute;
+        margin-left: 4vw;
+    }
+    .escrito2{
+        background-color: red;
+        width: 20vw;
+        position: absolute;
+        z-index: 1;
+        font-size: 15px;
+        text-align: left;
+        letter-spacing: -1.2px;
+        margin-top: -60vw;
+        margin-left: 4vw;
+    }
+}
 .escrito2{
     z-index: 1;
     color: #FFFFFF;
-    /*font-family:'Montserrat', serifa;*/
     font-size: 30px;
     font-weight: lighter;
     text-align: left;
@@ -121,6 +229,28 @@ header{
     border: 1px solid #707070;
     display: flex;
     position: relative;
+}
+@media (max-width: 550px){
+    .secao{
+        width: 100%;
+        height: 100vw;
+        position: relative;
+    }
+    .setepassos{
+        font-size: 20px;
+        text-align: left;
+        position: absolute;
+        width: 60vw;
+        margin-top: 2vw;
+        margin-left: 4vw;
+    }
+    .incentivo{
+        font-size: 12px;
+        text-align: justify;
+        width: 60vw;
+        margin-top: 8vw;
+        margin-left: 4vw;
+    }
 }
 .setepassos{
     color: #FFFFFF;
@@ -149,6 +279,12 @@ header{
     width: 100%;
     height: 195vw;
     position: relative;
+}
+@media (max-width: 550px){
+    secao1{
+        width: 100%;
+        height: 5000vw;
+    }
 }
 
 .imagem1 img{
@@ -190,6 +326,31 @@ header{
     margin-right: 1.8vw;
 }
 
+@media (max-width: 550px){
+    .imagem1 img{
+        margin-top: 0vw;
+        width: 60vw;
+        height: 40vw;
+    }
+    .quadro1{
+        margin-top: 27vw;
+        margin-left: 0vw;
+        width: 100%;
+        height: 68vw;
+    }
+    .um{
+        font-size: 22px;
+        margin-top: 1.5vw;
+        margin-left: 9vw;
+        width: 40vw;
+    }
+    .texto1{
+        font-size: 15px;
+        margin-top: 14vw;
+        margin-left: 9vw;
+        width: 48vw;
+    }
+}
 .imagem2 img{
     z-index: 2;
     width: 40vw;
@@ -226,6 +387,34 @@ header{
     margin-top: 4.5vw;
     margin-left: 2vw;
     margin-right: 1.8vw;
+}
+@media (max-width: 550px){
+    .imagem2 img{
+        z-index: 10;
+        margin-top: 98vw;
+        margin-left: 5vw;
+        width: 66vw;
+        height: 50vw;
+    }
+    .quadro2{
+        z-index: 10;
+        margin-top: 140vw;
+        margin-left: 0vw;
+        width: 100%;
+        height: 58vw;
+    }
+    .dois{
+        font-size: 22px;
+        margin-top: 1.5vw;
+        margin-left: 9vw;
+        width: 40vw;
+    }
+    .texto2{
+        font-size: 15px;
+        margin-top: 10vw;
+        margin-left: 9vw;
+        width: 55vw;
+    }
 }
 
 .imagem3 img{
@@ -265,6 +454,34 @@ header{
     margin-left: 2vw;
     margin-right: 1.8vw;
 }
+@media (max-width: 550px){
+    .imagem3 img{
+        z-index: 10;
+        margin-top: 202vw;
+        margin-left: 5vw;
+        width: 66vw;
+        height: 50vw;
+    }
+    .quadro3{
+        z-index: 10;
+        margin-top: 242vw;
+        margin-left: 0vw;
+        width: 100%;
+        height: 42vw;
+    }
+    .tres{
+        font-size: 22px;
+        margin-top: 1.5vw;
+        margin-left: 9vw;
+        width: 40vw;
+    }
+    .texto3{
+        font-size: 15px;
+        margin-top: 13.5vw;
+        margin-left: 9vw;
+        width: 55vw;
+    }
+}
 
 .imagem4 img{
     z-index: 2;
@@ -302,6 +519,34 @@ header{
     margin-top: 4.5vw;
     margin-left: 2vw;
     margin-right: 1.8vw;
+}
+@media (max-width: 550px){
+    .imagem4 img{
+        z-index: 10;
+        margin-top: 290vw;
+        margin-left: 5vw;
+        width: 66vw;
+        height: 50vw;
+    }
+    .quadro4{
+        z-index: 10;
+        margin-top: 338vw;
+        margin-left: 0vw;
+        width: 100%;
+        height: 45vw;
+    }
+    .quatro{
+        font-size: 22px;
+        margin-top: 1.5vw;
+        margin-left: 9vw;
+        width: 50vw;
+    }
+    .texto4{
+        font-size: 15px;
+        margin-top: 10vw;
+        margin-left: 9vw;
+        width: 55vw;
+    }
 }
 
 .imagem5 img{
@@ -341,6 +586,34 @@ header{
     margin-left: 2vw;
     margin-right: 1.8vw;
 }
+@media (max-width: 550px){
+    .imagem5 img{
+        z-index: 10;
+        margin-top: 390vw;
+        margin-left: 5vw;
+        width: 66vw;
+        height: 50vw;
+    }
+    .quadro5{
+        z-index: 10;
+        margin-top: 428vw;
+        margin-left: 0vw;
+        width: 100%;
+        height: 55vw;
+    }
+    .cinco{
+        font-size: 22px;
+        margin-top: 1.5vw;
+        margin-left: 9vw;
+        width: 50vw;
+    }
+    .texto5{
+        font-size: 15px;
+        margin-top: 10vw;
+        margin-left: 9vw;
+        width: 55vw;
+    }
+}
 .imagem6 img{
     z-index: 2;
     width: 40vw;
@@ -378,7 +651,34 @@ header{
     margin-left: 2vw;
     margin-right: 1.8vw;
 }
-
+@media (max-width: 550px){
+    .imagem6 img{
+        z-index: 10;
+        margin-top: 490vw;
+        margin-left: 5vw;
+        width: 66vw;
+        height: 50vw;
+    }
+    .quadro6{
+        z-index: 10;
+        margin-top: 535vw;
+        margin-left: 0vw;
+        width: 100%;
+        height: 46vw;
+    }
+    .seis{
+        font-size: 22px;
+        margin-top: 1.5vw;
+        margin-left: 9vw;
+        width: 50vw;
+    }
+    .texto6{
+        font-size: 15px;
+        margin-top: 10vw;
+        margin-left: 9vw;
+        width: 55vw;
+    }
+}
 .imagem7 img{
     z-index: 2;
     width: 40.2vw;
@@ -416,7 +716,34 @@ header{
     margin-left: 2vw;
     margin-right: 1.8vw;
 }
-
+@media (max-width: 550px){
+    .imagem7 img{
+        z-index: 10;
+        margin-top: 587vw;
+        margin-left: 5vw;
+        width: 66vw;
+        height: 50vw;
+    }
+    .quadro7{
+        z-index: 10;
+        margin-top: 631vw;
+        margin-left: 0vw;
+        width: 100%;
+        height: 42vw;
+    }
+    .sete{
+        font-size: 22px;
+        margin-top: 1.5vw;
+        margin-left: 9vw;
+        width: 50vw;
+    }
+    .texto7{
+        font-size: 15px;
+        margin-top: 10vw;
+        margin-left: 9vw;
+        width: 55vw;
+    }
+}
 .imagem8 img{
     z-index: 2;
     width: 30vw;
@@ -425,16 +752,44 @@ header{
     position: absolute;
     margin-left: 750px;
 }
+@media (max-width: 550px){
+    .imagem8 img{
+        z-index: 12;
+        margin-top: 674vw;
+        margin-left: 22vw;
+        width: 30vw;
+        height: 20vw;
+
+    }
+}
 
 .secao2{
     width: 100%;
     height: 49vw;
     position: relative;
 }
+
+@media (max-width: 550px){
+    .secao2{
+        margin-top: 500vw;
+        width: 100%;
+        height: 136vw;
+        position: relative;
+    }
+}
 .imagem9 img{
     position: absolute;
     margin-left: 6.5vw;
     height: 30.9vw;
+}
+@media (max-width:550px){
+    .imagem9 img{
+        z-index: 2;
+        position: absolute;
+        margin-top: 0vw;
+        margin-left: 7vw;
+        height: 43vw;
+    }
 }
 .imagem10 img{
     position: absolute;
@@ -443,6 +798,16 @@ header{
     width: 13.3vw;
     height: 15vw;
 }
+@media (max-width:550px){
+    .imagem10 img{
+        z-index: 2;
+        position: absolute;
+        margin-top: 0vw;
+        margin-left: 36.8vw;
+        width: 15vw;
+        height: 17vw;
+    }
+}
 .imagem11 img{
     position: absolute;
     margin-left: 27.8vw;
@@ -450,11 +815,31 @@ header{
     width: 13.3vw;
     height: 15.4vw;
 }
+@media (max-width:550px){
+    .imagem11 img{
+        z-index: 2;
+        position: absolute;
+        margin-top: 0vw;
+        margin-left: 53.2vw;
+        width: 15vw;
+        height: 17.2vw;
+    }
+}
 .imagem12 img{
     position: absolute;
     margin-left: 41.9vw;
     width: 14vw;
     height: 30.8vw;
+}
+@media (max-width:550px){
+    .imagem12 img{
+        z-index: 5;
+        position: absolute;
+        margin-top: 76vw;
+        margin-left: 43vw;
+        width: 25vw;
+        height: 55vw;
+    }
 }
 .imagem13 img{
     position: absolute;
@@ -462,18 +847,48 @@ header{
     width: 19vw;
     height: 45vw;
 }
+@media (max-width:550px){
+    .imagem13 img{
+        z-index: 2;
+        position: absolute;
+        margin-top: 76vw;
+        margin-left: 7vw;
+        width: 18vw;
+        height: 38vw;
+    }
+}
 .imagem14 img{
     position: absolute;
     margin-left: 76.5vw;
     width: 15vw;
     height: 13vw;
 }
+@media (max-width:550px){
+    .imagem14 img{
+        z-index: 2;
+        position: absolute;
+        margin-top: 115.2vw;
+        margin-left: 7vw;
+        width: 18vw;
+        height: 15.8vw;
+    }
+}
 .imagem15 img{
     position: absolute;
     margin-left: 76.5vw;
     margin-top: 13.5vw;
     width: 15vw;
-    height: 31.5vw;
+    height: 31.6vw;
+}
+@media (max-width:550px){
+    .imagem15 img{
+        z-index: 2;
+        position: absolute;
+        margin-top: 76vw;
+        margin-left: 26vw;
+        width: 16vw;
+        height: 38vw;
+    }
 }
 .imagem16 img{
     position: absolute;
@@ -482,6 +897,16 @@ header{
     width: 20.5vw;
     height: 13.8vw;
 }
+@media (max-width:550px){
+    .imagem16 img{
+        z-index: 2;
+        position: absolute;
+        margin-top: 44.5vw;
+        margin-left: 7vw;
+        width: 61vw;
+        height: 30vw;
+    }
+}
 .imagem17 img{
     position: absolute;
     margin-left: 27.8vw;
@@ -489,12 +914,32 @@ header{
     width: 13.2vw;
     height: 13.7vw;
 }
+@media (max-width:550px){
+    .imagem17 img{
+        z-index: 2;
+        position: absolute;
+        margin-top: 18.5vw;
+        margin-left: 36.8vw;
+        width: 31.5vw;
+        height: 24.5vw;
+    }
+}
 .imagem18 img{
     position: absolute;
     margin-left: 41.9vw;
     margin-top: 31.6vw;
     width: 14vw;
     height: 13.5vw;
+}
+@media (max-width:550px){
+    .imagem18 img{
+        z-index: 2;
+        position: absolute;
+        margin-top: 115.2vw;
+        margin-left: 26vw;
+        width: 16vw;
+        height: 15.8vw;
+    }
 }
 
 footer{
@@ -504,6 +949,12 @@ footer{
     position: relative;
     display: block;
     z-index: 2;
+}
+@media (max-width: 550px){
+    footer{
+        width: 100%;
+        height: 8vw;
+    }
 }
 .rodape{
     color: #FFFFFF;
