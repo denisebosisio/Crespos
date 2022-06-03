@@ -161,14 +161,17 @@ header{
         margin-left: 0vw;
         margin-top: 0vw;
         width: 100%;
-        height: 70vw;
+        height: 80vw;
+    }
+    .navegacao2 img{
+        width: 100%;
+        height: 80vw;
     }
     .imagem_cabelo2 figure{
         position: absolute;
         display: flex;
         z-index: -1;
         width: 100%;
-        height: 80vw;
         object-fit: cover;
         overflow: hidden;
     }
@@ -206,7 +209,6 @@ header{
         margin-left: 8vw;
     }
     .escrito2{
-        background-color: aqua;
         width: 40vw;
         z-index: 1;
         font-size: 4vw;
@@ -259,14 +261,14 @@ header{
         position: absolute;
         width: 80vw;
         margin-top: 2vw;
-        margin-left: 11vw;
+        margin-left: 10vw;
     }
     .incentivo{
         font-size: 4vw;
         text-align: center;
         width: 80vw;
         margin-top: 20vw;
-        margin-left: 11vw;
+        margin-left: 10vw;
     }
 }
 
@@ -278,7 +280,7 @@ header{
 @media (max-width: 550px){
     secao1{
         width: 100%;
-        height: 5000vw;
+        height: 500vw;
     }
 }
 
@@ -300,7 +302,6 @@ header{
     margin-top: 18.2vw;
     margin-left: 9.5vw;
 }
-
 .um{
     position: absolute;
     text-align: left;
@@ -320,7 +321,6 @@ header{
     margin-left: 2vw;
     margin-right: 1.8vw;
 }
-
 @media (max-width: 550px){
     .imagem1 img{
         margin-top: 0vw;
@@ -331,7 +331,7 @@ header{
         margin-top: 27vw;
         margin-left: 0vw;
         width: 100%;
-        height: 80vw;
+        height: 45vw;
     }
     .um{
         font-size: 6vw;
@@ -386,17 +386,17 @@ header{
 @media (max-width: 550px){
     .imagem2 img{
         z-index: 10;
-        margin-top: 98vw;
+        margin-top: 78vw;
         margin-left: 5vw;
         width: 66vw;
         height: 50vw;
     }
     .quadro2{
         z-index: 10;
-        margin-top: 140vw;
+        margin-top: 119vw;
         margin-left: 0vw;
         width: 100%;
-        height: 58vw;
+        height: 37vw;
     }
     .dois{
         font-size: 6vw;
@@ -412,7 +412,6 @@ header{
         height: 70vw;
     }
 }
-
 .imagem3 img{
     z-index: 2;
     width: 40.2vw;
@@ -453,17 +452,17 @@ header{
 @media (max-width: 550px){
     .imagem3 img{
         z-index: 10;
-        margin-top: 202vw;
+        margin-top: 162vw;
         margin-left: 5vw;
         width: 66vw;
         height: 50vw;
     }
     .quadro3{
         z-index: 10;
-        margin-top: 242vw;
+        margin-top: 201vw;
         margin-left: 0vw;
         width: 100%;
-        height: 43vw;
+        height: 35vw;
     }
     .tres{
         font-size: 6vw;
@@ -479,7 +478,6 @@ header{
         height: 70vw;
     }
 }
-
 .imagem4 img{
     z-index: 2;
     width: 40vw;
@@ -520,17 +518,17 @@ header{
 @media (max-width: 550px){
     .imagem4 img{
         z-index: 10;
-        margin-top: 290vw;
+        margin-top: 242vw;
         margin-left: 5vw;
         width: 66vw;
         height: 50vw;
     }
     .quadro4{
         z-index: 10;
-        margin-top: 338vw;
+        margin-top: 290vw;
         margin-left: 0vw;
         width: 100%;
-        height: 45vw;
+        height: 32vw;
     }
     .quatro{
         font-size: 6vw;
@@ -546,7 +544,6 @@ header{
         height: 70vw;
     }
 }
-
 .imagem5 img{
     z-index: 2;
     width: 40.2vw;
@@ -587,17 +584,17 @@ header{
 @media (max-width: 550px){
     .imagem5 img{
         z-index: 10;
-        margin-top: 390vw;
+        margin-top: 330vw;
         margin-left: 5vw;
         width: 66vw;
         height: 50vw;
     }
     .quadro5{
         z-index: 10;
-        margin-top: 428vw;
+        margin-top: 368vw;
         margin-left: 0vw;
         width: 100%;
-        height: 55vw;
+        height: 35vw;
     }
     .cinco{
         font-size: 6vw;
@@ -653,17 +650,17 @@ header{
 @media (max-width: 550px){
     .imagem6 img{
         z-index: 10;
-        margin-top: 490vw;
+        margin-top: 410vw;
         margin-left: 5vw;
         width: 66vw;
         height: 50vw;
     }
     .quadro6{
         z-index: 10;
-        margin-top: 535vw;
+        margin-top: 455vw;
         margin-left: 0vw;
         width: 100%;
-        height: 46vw;
+        height: 30vw;
     }
     .seis{
         font-size: 6vw;
@@ -719,17 +716,17 @@ header{
 @media (max-width: 550px){
     .imagem7 img{
         z-index: 10;
-        margin-top: 587vw;
+        margin-top: 491vw;
         margin-left: 5vw;
         width: 66vw;
         height: 50vw;
     }
     .quadro7{
         z-index: 10;
-        margin-top: 631vw;
+        margin-top: 530vw;
         margin-left: 0vw;
         width: 100%;
-        height: 42vw;
+        height: 30vw;
     }
     .sete{
         font-size: 6vw;
@@ -756,14 +753,13 @@ header{
 @media (max-width: 550px){
     .imagem8 img{
         z-index: 12;
-        margin-top: 674vw;
+        margin-top: 560vw;
         margin-left: 22vw;
         width: 30vw;
         height: 20vw;
 
     }
 }
-
 .secao2{
     width: 100%;
     height: 49vw;
@@ -772,7 +768,7 @@ header{
 
 @media (max-width: 550px){
     .secao2{
-        margin-top: 500vw;
+        margin-top: 390vw;
         width: 100%;
         height: 136vw;
         position: relative;
