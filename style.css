@@ -748,13 +748,13 @@ header{
     height: 20vw;
     margin-top: 162vw;
     position: absolute;
-    margin-left: 562px;
+    margin-left: 55vw;
 }
 @media (max-width: 550px){
     .imagem8 img{
         z-index: 12;
         margin-top: 560vw;
-        margin-left: 22vw;
+        margin-left: 2vw;
         width: 30vw;
         height: 20vw;
 
